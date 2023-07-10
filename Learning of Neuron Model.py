@@ -29,3 +29,7 @@ for epoc in range(10):
         w[1] += alpha*E*train[i][0]
         w[2] += alpha*E*train[i][1]
     print("{count}回目：[w0]={w0}, [w1]={w1}, [w2]={w2}".format(count = epoc+1, w0 = round(w[0],5), w1 = round(w[1],5), w2 = round(w[2],5)))
+
+# テストデータを入力した結果を表示
+for i in range(M):
+    print(np.where(-1*w[0] + test[i][0]*w[1] + test[i][1]*w[2]>=0, 1, 0))
