@@ -1,4 +1,4 @@
-dimport numpy as np
+import numpy as np
 alpha = 0.01 # 学習率
 
 N = 5 # 訓練データの数
